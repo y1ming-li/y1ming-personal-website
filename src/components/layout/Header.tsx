@@ -7,7 +7,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-foreground/10 bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
         <Image
-          src="/logo_red.png"
+          src="/image/logo_red.png"
           alt={siteConfig.name}
           height={32}
           width={120}

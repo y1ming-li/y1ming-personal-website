@@ -32,7 +32,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col items-center gap-1 bg-accent pt-[calc(2/5*100vh_-_200px)]">
       <Image
-        src="/logo_white.png"
+        src="/image/logo_white.png"
         alt="Logo"
         width={430}
         height={410}

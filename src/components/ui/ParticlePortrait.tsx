@@ -138,7 +138,7 @@ export function ParticlePortrait() {
 
     // ── Sample portrait ───────────────────────────────────────────────────
     const img = new Image();
-    img.src = "/profile.PNG";
+    img.src = "/image/profile.PNG";
 
     img.onload = () => {
       const off = document.createElement("canvas");
