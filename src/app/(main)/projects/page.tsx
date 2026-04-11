@@ -1,5 +1,5 @@
-import { Projects } from "@/components/sections";
+import { ProjectsPage } from '@/components/ui/ProjectsPage';
 
-export default function ProjectsPage() {
-  return <Projects />;
+export default function Page() {
+  return <ProjectsPage />;
 }

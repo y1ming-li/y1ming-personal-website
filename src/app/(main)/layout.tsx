@@ -8,7 +8,9 @@ export default function MainLayout({
 }) {
   return (
     <>
-      <Header />
+      <div id="site-header">
+        <Header />
+      </div>
       <main className="flex flex-col flex-1">{children}</main>
       <Footer />
     </>
