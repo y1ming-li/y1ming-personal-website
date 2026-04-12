@@ -11,7 +11,7 @@ export default function MainLayout({
       <div id="site-header">
         <Header />
       </div>
-      <main className="flex flex-col flex-1">{children}</main>
+      <main className="flex flex-col flex-1 min-h-0 mx-auto w-full max-w-5xl">{children}</main>
       <Footer />
     </>
   );

@@ -50,9 +50,7 @@ export function ProjectsCanvas({ projects }: { projects: CubeItem[] }) {
   useEffect(() => {
     const el = document.getElementById('site-header');
     if (!el) return;
-    el.style.transition = 'opacity 0.3s';
-    el.style.opacity = openIndex !== null ? '0' : '';
-    el.style.pointerEvents = openIndex !== null ? 'none' : '';
+    el.style.display = openIndex !== null ? 'none' : '';
   }, [openIndex]);
 
   return (

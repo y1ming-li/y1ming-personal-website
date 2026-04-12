@@ -70,7 +70,7 @@ const BackgroundColorShaderMaterial = shaderMaterial(
       return clamp(0.0, 1.0, bn);
     }
 
-    vec3 coffee = vec3(0.176, 0.059, 0.118);
+    vec3 blush = vec3(0.961, 0.910, 0.937); // matches --foreground #F5E8EF (soft rose-white)
 
     void main() {
       float transitionBlobs = 0.0;
@@ -94,7 +94,7 @@ const BackgroundColorShaderMaterial = shaderMaterial(
       colorBlobs *= noise(vUv * 1000.0, gl_FragCoord.x * gl_FragCoord.y / 10000.0);
       colorBlobs = step(0.5, colorBlobs);
 
-      vec3 color = mix(coffee, colorBlobs * projectColor, opacity) * 2.0;
+      vec3 color = mix(blush, colorBlobs * projectColor, opacity) * 2.0;
       color *= smoothstep(0.0, 1.0, distanceGradient) * 0.5;
 
       gl_FragColor = vec4(color, transitionBlobs);
