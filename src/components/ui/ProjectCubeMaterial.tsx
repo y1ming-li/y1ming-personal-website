@@ -63,9 +63,9 @@ const ProjectCubeShaderMaterial = shaderMaterial(
       return mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
     }
 
-    vec3 darkColor   = vec3(0.0, 0.0, 1.0);
-    vec3 middleColor = vec3(0.0, 1.0, 1.0);
-    vec3 lightColor  = vec3(0.8, 1.0, 1.0);
+    vec3 darkColor   = vec3(0.70, 0.05, 0.05);  // mid-red — visible on dark bg
+    vec3 middleColor = vec3(0.90, 0.00, 0.00);  // #E60000 accent red
+    vec3 lightColor  = vec3(1.00, 0.82, 0.82);  // pale pink — bright highlight
 
     void main() {
       float n1 = noise(vUv * 5.0   - seed           + time);

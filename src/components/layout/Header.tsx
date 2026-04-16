@@ -10,7 +10,7 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full">
+      <header className="fixed top-0 left-0 right-0 z-50">
         {/* 3-column grid: left | center (max-w-5xl) | right — logo sits at right edge of left col */}
         <div className="grid h-14" style={{ gridTemplateColumns: '1fr min(64rem, 100%) 1fr' }}>
           <div className="flex items-center justify-end">

@@ -91,18 +91,21 @@ export function ProjectListing({
         <mesh position={[0, 0, -5]} scale={[2.5, 2.5, 0.1]}>
           <sphereGeometry args={[4, 70, 70]} />
           <MeshDistortMaterial
-            color="#551F00"
-            speed={6}
-            radius={1}
-            distort={0.3}
+            color="#F6F1E8"
+            emissive="#F6F1E8"
+            emissiveIntensity={1.0}
+            speed={1}
+            radius={0.6}
+            distort={0.15}
+            roughness={0}
             transparent
-            opacity={0.7}
+            opacity={0.9}
             side={DoubleSide}
           />
         </mesh>
         <Text
           position={[0, 0, 0]}
-          color="#00FFFF"
+          color="#E60000"
           anchorX="center"
           anchorY="middle"
           textAlign="center"

@@ -10,7 +10,7 @@ const ProjectsCanvas = dynamic(
 
 export function ProjectsPage() {
   return (
-    <div className="w-full h-full">
+    <div style={{ width: '100vw', height: '100vh', position: 'relative', left: '50%', transform: 'translateX(-50%)' }}>
       <ProjectsCanvas projects={projects} />
     </div>
   );

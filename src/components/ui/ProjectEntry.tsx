@@ -102,7 +102,7 @@ export const ProjectEntry = ({
   });
 
   let cubeScale = 1;
-  if (hovering) cubeScale = 3;
+  if (hovering) cubeScale = 2.9;
   if (open) cubeScale = 1;
 
   const cubePosition: CoordArray = open ? [0, 0, 4] : basePosition;
@@ -142,12 +142,15 @@ export const ProjectEntry = ({
             <sphereGeometry args={[1, 20, 20]} />
             <MeshDistortMaterial
               color={project.color}
-              speed={6}
-              radius={1}
-              distort={0.5}
+              emissive={project.color}
+              emissiveIntensity={1.2}
+              speed={3}
+              radius={0.85}
+              distort={0.25}
               transparent
-              opacity={0.4}
-              roughness={0}
+              opacity={0.45}
+              roughness={0.1}
+              metalness={0.3}
             />
           </mesh>
         </animated.group>
@@ -177,7 +180,7 @@ export const ProjectEntry = ({
               if (!someProjectIsOpen) setOpen(true);
             }}
           >
-            <roundedBoxGeometry args={[1, 1, 1, 4, 0.1]} />
+            <roundedBoxGeometry args={[0.8, 0.8, 0.8, 4, 0.1]} />
             <ProjectCubeMaterial
               color={project.color}
               active={active}

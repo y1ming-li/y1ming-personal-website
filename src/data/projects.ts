@@ -13,7 +13,7 @@ export interface CubeItem {
 export const projects: CubeItem[] = [
   {
     slug: "personal-website",
-    title: "This Portfolio",
+    title: "Portfolio",
     shortTitle: "Portfolio",
     subtitle: "Next.js · React Three Fiber · Tailwind CSS",
     color: "#E60000",
